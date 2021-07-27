@@ -1,0 +1,167 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  height: 10vh;
+  padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  height: 110px;
+  width: 100px;
+  padding: 35px 0;
+}
+.links ul {
+  display: flex;
+  align-items: center;
+}
+.links ul li {
+  padding: 0 20px;
+}
+.links ul li a {
+  text-decoration: none;
+  color: #333;
+}
+.links select {
+  border: none;
+}
+.bell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bell i {
+  padding: 0 15px;
+}
+.person {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0px 1px 5px rgba(104, 104, 104, 0.7);
+}
+.dropdown input {
+  padding: 6px 0;
+  border: none;
+  color: #f1f1f1;
+  margin-left: 10px;
+}
+.dropdown input:focus {
+  outline: none;
+}
+.dropdown i {
+  padding: 0 !important;
+  color: #f1f1f1;
+  margin-left: -30px;
+}
+.contact-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  border: 1px solid lightgrey;
+  height: 100%;
+}
+form {
+  padding-top: 25px;
+}
+.contact {
+  height: 800px;
+}
+.contact-img {
+  background-image: url(./callcenter.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+}
+.contact-img::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(19, 201, 13, 0.699);
+}
+.contact-img > * {
+  color: #fff;
+  position: relative;
+  padding: 30px;
+}
+.contact input {
+  width: 100%;
+  padding: 16px 8px;
+  border: 1px solid lightgrey;
+}
+.contact input:focus,
+textarea:focus {
+  outline: none;
+}
+.contact input,
+textarea {
+  border-radius: 5px;
+}
+.contact input[type="email"],
+.rest > label,
+.name {
+  margin-left: 20px !important;
+  margin-bottom: 10px !important;
+}
+.contact input[type="email"] {
+  width: 96% !important;
+}
+.name {
+  margin-left: 8px !important;
+  width: 97% !important;
+}
+.mess label,
+.name label {
+  margin-bottom: 15px;
+}
+.rest {
+  padding-right: 17px;
+}
+.mess {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.mess textarea {
+  height: 250px;
+  border: 1px solid lightgrey;
+  padding: 4px 10px;
+}
+.btn-faith {
+  background-color: limegreen;
+  width: 100%;
+  cursor: pointer;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+}
+.submitbutton {
+  margin: 20px;
+}
+.contact-info {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.contact-info i {
+  margin-right: 10px;
+}
