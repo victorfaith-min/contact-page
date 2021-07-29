@@ -19,6 +19,11 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+.container {
+  max-width: 1100px;
+  padding: 1rem;
+  margin: 0 auto;
+}
 .logo {
   height: 110px;
   width: 100px;
@@ -76,9 +81,7 @@ nav {
   border: 1px solid lightgrey;
   height: 100%;
 }
-form {
-  padding-top: 25px;
-}
+
 .contact {
   height: 800px;
 }
@@ -102,6 +105,7 @@ form {
   color: #fff;
   position: relative;
   padding: 30px;
+  text-align: center;
 }
 .contact input {
   width: 100%;
@@ -115,53 +119,102 @@ textarea:focus {
 .contact input,
 textarea {
   border-radius: 5px;
-}
-.contact input[type="email"],
-.rest > label,
-.name {
-  margin-left: 20px !important;
-  margin-bottom: 10px !important;
-}
-.contact input[type="email"] {
-  width: 96% !important;
-}
-.name {
-  margin-left: 8px !important;
-  width: 97% !important;
-}
-.mess label,
-.name label {
+  margin-top: 15px;
   margin-bottom: 15px;
 }
-.rest {
-  padding-right: 17px;
+.contact form,
+.contact-info {
+  padding: 2rem 1.5rem;
 }
+
 .mess {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+}
+.name {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
 }
 .mess textarea {
-  height: 250px;
-  border: 1px solid lightgrey;
-  padding: 4px 10px;
+  height: 150px;
+  padding: 1rem;
 }
 .btn-faith {
-  background-color: limegreen;
-  width: 100%;
+  margin: 18px 0;
   cursor: pointer;
-  padding: 8px;
   border: none;
-  border-radius: 10px;
+  background: limegreen;
+  padding: 0.8rem 1.3rem;
   color: #fff;
 }
-.submitbutton {
-  margin: 20px;
-}
-.contact-info {
-  margin-top: 30px;
-  margin-left: 20px;
+.btn-faith:hover {
+  background: green;
 }
 .contact-info i {
   margin-right: 10px;
+}
+.contact-info p {
+  margin: 15px 0;
+}
+.d-non {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .bell {
+    display: flex;
+    align-items: center;
+  }
+  .d-none {
+    display: none;
+  }
+  .d-non {
+    display: block;
+  }
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+  .links ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 20px;
+  }
+  .links li select {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  .links {
+    padding: 80px 100px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(50, 205, 50, 0.6);
+    z-index: 900;
+    transition: 0.4s all ease;
+  }
+  .links ul li a {
+    color: #fff;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .links ul li {
+    padding: 10px;
+  }
+  .links.active {
+    right: 0;
+  }
+  .btn-faith {
+    width: 100%;
+  }
+  #bars {
+    position: relative;
+    z-index: 10000;
+  }
+  .contact-info {
+    padding-bottom: 15px;
+  }
 }
